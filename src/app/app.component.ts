@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'draggable';
+  onDragStart():void {
+    console.log('got drag start');
+  }
+
+  onDragMove(event: PointerEvent):void {
+    console.log( `got drag move ${Math.round(event.clientX)} ${Math.round(event.clientY)}` );
+  }
+
+  onDragEnd():void {
+    console.log('got drag end');
+  }
 }
