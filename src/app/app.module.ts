@@ -1,16 +1,16 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { DraggableModule } from './draggable/draggable.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    DraggableModule,
+    DraggableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
