@@ -7,8 +7,30 @@
   My box
 </div>
 
-<div class="box" appDraggableRx
+<!-- <div class="box" appDraggableRx
      (dragStart)="onDragStart()" (dragMove)="onDragMove($event)" (dragEnd)="onDragEnd()">
   My box
 </div>
+ -->
 
+
+ <h2>Parte 2 -- draggable movable</h2>
+
+ <div class="box" appDraggable appMovable></div>
+ <h1>Draggable</h1>
+
+<h2>Part 1 - draggable directive</h2>
+
+<div class="box" appDraggable>
+  Draggable
+</div>
+
+<h2>Part 2 - movable directive</h2>
+
+<div class="box" appMovable>
+  Movable 1
+</div>
+
+<div class="box" appMovable [appMovableReset]="true">
+  Movable 2
+</div>
